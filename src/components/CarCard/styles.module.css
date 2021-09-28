@@ -1,0 +1,173 @@
+.carCard {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 32px #0E2A6029;
+  border-radius: 8px;
+  opacity: 1;
+
+  padding: 45px 26px 32px 26px;
+
+  width: 390px;
+
+  margin: 0 15px 13px 0;
+}
+
+@media (max-width:960px) {
+  .carCard {
+    width: 85%;
+  }
+}
+
+.title {
+  text-align: left;
+  font: normal normal normal 18px/28px Roboto;
+  letter-spacing: 0px;
+  color: #303030;
+}
+
+.modelYear {
+  text-align: left;
+  font: normal normal normal 22px/28px Roboto;
+  letter-spacing: 0px;
+  color: #22BF86;
+}
+
+.vin {
+  text-align: left;
+  font: normal normal normal 10px/13px Roboto;
+  letter-spacing: 1px;
+  color: #707B8C;
+  opacity: 1;
+}
+
+.images {
+  width: 100%;
+  overflow: scroll;
+
+  display: flex;
+  margin-top: 19px;
+}
+
+.carImage {
+  width: 264px;
+  border-radius: 4px;
+  opacity: 1;
+  margin-right: 12px;
+}
+
+.characteristics {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.characteristic {
+  margin: 16px 0.1rem 0px 0.1rem;
+
+  min-width: calc(50% - 0.2rem);
+  max-width: calc(50% - 0.2rem);;
+  width: calc(50% - 0.2em);;
+}
+
+.characteristicTitle {
+  text-align: left;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #ACB8BF;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.characteristicValue {
+  margin-top: 6px;
+
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  opacity: 1;
+}
+
+.options {
+  margin-top: 18px;
+}
+
+.optionsValue {
+  margin-top: 6px;
+
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 0px;
+  opacity: 1;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.optionsList {
+  display: flex;
+}
+
+.optionsMore {
+  margin: auto 4px;
+
+  white-space: nowrap;
+
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #707B8C;
+  height: 12px;
+}
+
+.total {
+  margin-top: 39px;
+
+  display: flex;
+}
+
+.financial {
+  width: 50%;
+}
+
+.price {
+  text-align: left;
+  font: normal normal normal 28px/28px Roboto;
+  letter-spacing: 0px;
+  color: #22BF86;
+  opacity: 1;
+}
+
+.actions {
+  width: 60%;
+  text-align: right;
+}
+
+.buyButton {
+  margin: auto 0;
+  background: transparent linear-gradient(252deg, #11998E 0%, #38EF7D 100%) 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  opacity: 1;
+
+  border: none;
+
+  padding: 18px 20px;
+
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+  opacity: 1;
+
+  cursor: pointer;
+}
+
+.buyButton[type='inactive'] {
+  background: #E7EBF0 0% 0% no-repeat padding-box;
+  color: #707B8C;
+
+  cursor: not-allowed;
+
+}

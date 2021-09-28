@@ -1,0 +1,11 @@
+html {
+}
+
+.content {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
