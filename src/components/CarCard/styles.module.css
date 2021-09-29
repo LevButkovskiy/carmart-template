@@ -19,21 +19,24 @@
 
 .title {
   text-align: left;
-  font: normal normal normal 18px/28px Roboto;
+  font-size: 110%;
   letter-spacing: 0px;
   color: #303030;
+
+  white-space: nowrap;
 }
 
 .modelYear {
+  margin-left: 6px;
   text-align: left;
-  font: normal normal normal 22px/28px Roboto;
+  font-size: 60%;
   letter-spacing: 0px;
   color: #22BF86;
 }
 
 .vin {
   text-align: left;
-  font: normal normal normal 10px/13px Roboto;
+  font-size: 60%;
   letter-spacing: 1px;
   color: #707B8C;
   opacity: 1;
@@ -70,7 +73,7 @@
 
 .characteristicTitle {
   text-align: left;
-  font-size: 10px;
+  font-size: 60%;
   letter-spacing: 1px;
   color: #ACB8BF;
   text-transform: uppercase;
@@ -81,20 +84,26 @@
   margin-top: 6px;
 
   text-align: left;
-  font-size: 14px;
+  font-size: 80%;
   letter-spacing: 1.4px;
   opacity: 1;
+
+  text-transform: capitalize;
 }
 
 .options {
   margin-top: 18px;
 }
 
+.options[type='hidden'] {
+  opacity: 0;
+}
+
 .optionsValue {
   margin-top: 6px;
 
   text-align: left;
-  font-size: 14px;
+  font-size: 80%;
   letter-spacing: 0px;
   opacity: 1;
 
@@ -113,7 +122,7 @@
   white-space: nowrap;
 
   text-align: left;
-  font-size: 12px;
+  font-size: 70%;
   letter-spacing: 1px;
   color: #707B8C;
   height: 12px;
@@ -131,7 +140,7 @@
 
 .price {
   text-align: left;
-  font: normal normal normal 28px/28px Roboto;
+  font-size: 140%;
   letter-spacing: 0px;
   color: #22BF86;
   opacity: 1;
@@ -153,7 +162,7 @@
   padding: 18px 20px;
 
   text-align: center;
-  font-size: 10px;
+  font-size: 60%;
   letter-spacing: 2px;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -169,5 +178,8 @@
   color: #707B8C;
 
   cursor: not-allowed;
+}
 
+.additionalOptionsResult {
+  font-size: 70%;
 }

@@ -21,8 +21,13 @@ export default function CarCard(props) {
     )
     }
 
-    const renderOptions = (option, index) => {
-        return index == 0 ? `${option.optionName}, ` : index == 1 ? `${option.optionName} ` : '';
+    const renderOptions = (option, index, options) => {
+        if (options.length > 1) {
+            return index == 0 ? `${option.optionName}, ` : index == 1 ? `${option.optionName} ` : '';
+        }
+        else {
+            return `${option.optionName} `;
+        }
     }
 
     const inclineByNumber = (number) => {
@@ -50,7 +55,7 @@ export default function CarCard(props) {
            <div className={styles.characteristics}>
                {characteristics.map(renderCharacteristics)}
            </div>
-           <div className={styles.options}>
+           <div className={styles.options} type={!options.length ? 'hidden' : null}>
                <div className={styles.characteristicTitle}>Пакеты</div>
                <div className={styles.optionsList}>
                    <div className={styles.optionsValue}>{options.map(renderOptions)}</div>
@@ -59,10 +64,11 @@ export default function CarCard(props) {
            </div>
            <div className={styles.total}>
                <div className={styles.financial}>
-                    <div className={styles.price}>{addSpacesToNumber(price)}<span style={{color: 'black'}}> ₽</span></div>
+                   <div className={styles.price}>{addSpacesToNumber(price)}<span style={{color: 'black'}}> ₽</span></div>
+                   {options.length > 0 && <div className={styles.additionalOptionsResult}>Доп. опции на <span style={{color: '#22BF86'}}>999 999</span>₽</div>}
                </div>
                <div className={styles.actions}>
-                   <button className={styles.buyButton} type={status === 'В поставке' || status === 'Резерв'? 'inactive' : null}>{status}</button>
+                   <button className={styles.buyButton} type={status === 'В поставке' || status === 'Резерв' || status === 'Продан' ? 'inactive' : null}>{status}</button>
                </div>
            </div>
        </div>

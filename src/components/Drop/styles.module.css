@@ -1,0 +1,29 @@
+.drop {
+    margin: 40px 8%;
+    width: 276px;
+
+    background: #35373A 0% 0% no-repeat padding-box;
+    border-radius: 4px 4px 0px 0px;
+    opacity: 1;
+
+    text-align: left;
+
+    padding: 18px 14px;
+
+    border: none;
+}
+
+.drop:hover {
+    background: #35373A 0% 0% no-repeat padding-box;
+    border: none;
+}
+
+.drop:active {
+    background: #35373A 0% 0% no-repeat padding-box;
+    border: none;
+}
+
+.drop:hover, .dropMenu, .dropMenuItem {
+    color: white;
+    background: #35373A 0% 0% no-repeat padding-box;
+}
