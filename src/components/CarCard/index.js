@@ -14,11 +14,7 @@ export default function CarCard(props) {
     }
 
     const renderImages = (image, index) => {
-        return (
-            <>
-            <img src={image.url} className={styles.carImage}/>
-        <img src={image.url} className={styles.carImage}/></>
-    )
+        return <img src={image.url} className={styles.carImage}/>
     }
 
     const renderOptions = (option, index, options) => {
